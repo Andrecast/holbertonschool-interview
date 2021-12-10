@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""Lockboxes exercise interview"""
+
+
 def canUnlockAll(boxes):
-    """determines if all the boxes can be opened."""
+    """Determines if all the boxes can be opened"""
 
     box_status = False
     keys = [0]
