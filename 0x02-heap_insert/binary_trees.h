@@ -1,5 +1,5 @@
-#ifndef BINARY_TREE
-#define BINARY_TREE
+#ifndef _BINARY_TREES_H_
+#define _BINARY_TREES_H_
 
 #include <stdlib.h>/*para usar malloc, free*/
 #include <stdio.h>/*para usar printf*/
@@ -26,4 +26,4 @@ void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 heap_t *heap_insert(heap_t **root, int value);
 
-#endif
+#endif /* _BINARY_TREES_H_ */
