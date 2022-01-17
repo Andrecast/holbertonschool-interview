@@ -1,5 +1,6 @@
 #ifndef BINARY_TREE
 #define BINARY_TREE
+
 #include <stdlib.h>/*para usar malloc, free*/
 #include <stdio.h>/*para usar printf*/
 #include <stddef.h>
