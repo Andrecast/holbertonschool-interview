@@ -50,17 +50,17 @@ int is_palindrome(listint_t **head)
 	int length = list(head);
 	int half = length / 2;
 	int i, if_palindrome = 1;
-	listint_t *reversed;
+	listint_t *reversed_head;
 	listint_t *current = *head;
 	listint_t *current_reversed;
 
-	reversed = *head;
+	reversed_head = *head;
 	for (i = 0; i < half; i++)
-		reversed = reversed->next;
+		reversed_head = reversed_head->next;
 	if (length % 2 != 0)
-		reversed = reversed->next;
-	reversed = reversed(&reversed);
-	current_reversed = reversed;
+		reversed_head = reversed_head->next;
+	reversed_head = reversed(&reversed_head);
+	current_reversed = reversed_head;
 	current = *head;
 	while (current_reversed != NULL)
 	{
