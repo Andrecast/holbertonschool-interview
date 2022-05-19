@@ -88,5 +88,5 @@ int main(int argc, char *argv[])
 		n1++;
 	for (n2 = argv[2]; *n2 == '0' && n2[1] != 0; len2--)
 		n2++;
-	return (multiplic(n1, len1, n2, len2));
+	return (multipli(n1, len1, n2, len2));
 }
